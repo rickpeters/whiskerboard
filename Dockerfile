@@ -8,9 +8,24 @@
 # This image contains a Dockerized whiskerboard installation.
 # It requires a redis cache and postgres db to run properly
 #
-# docker run -d -t --name some-redis -v `pwd`/redis:/data redis:2.8 redis-server --appendonly yes
-# docker run -d -t --name some-postgres -v `pwd`/pgdata/data:/data -v `pwd`/pgdata/log:/var/log/postgresql  postgres:9.3
-# docker run -d -t --name whiskerboard -v `pwd`/whiskerboard/logs:/whiskerboard/logs -link some-redis:redis -link some-postgres:postgres agaveapi/whiskerboard
+# docker run -d -t --name some-redis \
+#				  -v `pwd`/redis:/data \
+#				  redis:2.8 \
+#				  redis-server --appendonly yes
+#
+#	docker run -d -t --name some-postgres \
+#				 -v `pwd`/pgdata/data:/data \
+#				 -v `pwd`/pgdata/log:/var/log/postgresql \
+#				 postgres:9.3
+#
+#	docker run -d -t --name whiskerboard \
+#				 -v `pwd`/whiskerboard/logs:/whiskerboard/logs \
+#				 --link some-redis:redis \
+#				 --link some-postgres:postgres \
+#				 -p 8000:8000 \
+#				 -p 10022:22 \
+#				 -h docker.example.com \
+#				 agaveapi/whiskerboard#
 #
 ######################################################
 
