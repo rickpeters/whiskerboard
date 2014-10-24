@@ -1,0 +1,22 @@
+whiskerboard:
+  #build: .
+  image: agaveapi/whiskerboard
+  command:
+  hostname: docker.example.com
+  ports:
+    - "8000:8000"
+  links:
+    - postgres
+    - redis
+  volumes:
+    - whiskerboard/logs:/whiskerboard/logs
+postgres:
+  image: postgres:9.3
+  volumes:
+    - pgdata/data:/data
+    - pgdata/log:/var/log/postgresql
+redis:
+  image: redis:2.8
+  command: redis-server
+  volumes:
+    - redis:/data

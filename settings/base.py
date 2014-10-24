@@ -40,11 +40,11 @@ MIDDLEWARE_CLASSES = (
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'whiskerboard',
-        'USER': '',
+        'NAME': 'postgres',
+        'USER': 'postgres',
         'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'HOST': 'postgres',
+        'PORT': '5432',
     }
 }
 
@@ -52,8 +52,8 @@ DATABASES = {
 # Localisation
 ######################################
 
-TIME_ZONE = 'Europe/London'
-LANGUAGE_CODE = 'en-gb'
+TIME_ZONE = 'America/Chicago'
+LANGUAGE_CODE = 'en-us'
 USE_I18N = True
 USE_L10N = True
 
@@ -133,4 +133,3 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
     'board.context_processors.current_site',
 )
-

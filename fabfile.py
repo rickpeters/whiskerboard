@@ -17,6 +17,5 @@ def setup():
 def deploy():
     setup()
     local("./manage.py collectstatic --noinput")
-    local("./manage.py syncdb")
-    local("./manage.py migrate")
-
+    # local("./manage.py syncdb")
+    # local("./manage.py migrate")
