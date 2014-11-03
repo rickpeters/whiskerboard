@@ -25,7 +25,7 @@
 #				 -p 8000:8000 \
 #				 -p 10022:22 \
 #				 -h docker.example.com \
-#				 agaveapi/whiskerboard#
+#				 agaveapi/whiskerboard
 #
 ######################################################
 
@@ -50,7 +50,7 @@ ADD . /usr/src/python/whiskerboard
 WORKDIR /usr/src/python/whiskerboard
 
 RUN pip install -r requirements.txt
-RUN fab app:myamazingboard deploy
+#RUN fab app:myamazingboard deploy
 
 ADD supervisord.conf /etc/supervisord.conf
 RUN mkdir /var/log/supervisor

@@ -5,6 +5,7 @@ whiskerboard:
   hostname: docker.example.com
   ports:
     - "8000:8000"
+    - "10023:22"
   links:
     - postgres
     - redis

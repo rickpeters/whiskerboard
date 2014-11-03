@@ -2,6 +2,7 @@ from fabric.api import local, env
 import os
 import random
 
+
 def app(app):
     env['app'] = app
 
@@ -15,7 +16,9 @@ def setup():
             fp.write('SECRET_KEY = "%s"\n' % secret_key)
 
 def deploy():
+    env.warn_only = True
     setup()
     local("./manage.py collectstatic --noinput")
-    # local("./manage.py syncdb")
-    # local("./manage.py migrate")
+    local("./manage.py syncdb --noinput")
+    local("./manage.py migrate --noinput")
+    local("echo \"from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@example.com', 'changeit')\" | ./manage.py shell")
