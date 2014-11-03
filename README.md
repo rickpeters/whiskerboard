@@ -38,7 +38,7 @@ You can also manually spin up the depedencies as needed.
 
 The webapp will be running in a python dev server by default. In the future we will front the app with a http server.
 
-At this point you can visit the app. Now head over to http://docker.example.com:8000/admin/ and login with root:root. You'll want to set the name of your board by clicking on "sites". Edit the single entry called "example.com" and enter a name for your board.
+At this point you can visit the app. Now head over to http://docker.example.com:8000/admin/ and login with admin:changeit. You'll want to set the name of your board by clicking on "sites". Edit the single entry called "example.com" and enter a name for your board.
 
 Back on the admin home page, click on "services" and add the things you want to report the status of (website, API etc). To change the status of a service add an event for it.
 
