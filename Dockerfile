@@ -31,7 +31,7 @@
 
 FROM python:2.7
 
-MAINTAINER Rion Dooley <dooley@tacc.utexas.edu>
+MAINTAINER Rick Peters
 
 RUN apt-get autoremove -y
 RUN apt-get update -y
