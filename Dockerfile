@@ -31,7 +31,7 @@
 
 FROM python:2.7
 
-MAINTAINER Rick Peters
+MAINTAINER Rick Peters <rick.peters@me.com>
 
 RUN apt-get autoremove -y
 RUN apt-get update -y
