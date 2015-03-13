@@ -1,6 +1,6 @@
 whiskerboard:
   #build: .
-  image: agaveapi/whiskerboard
+  image: rickpeters/whiskerboard
   command:
   hostname: docker.example.com
   ports:
