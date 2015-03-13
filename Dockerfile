@@ -1,7 +1,7 @@
 ######################################################
 #
 # Agave DevOps Whiskerboard
-# Tag: agaveapi/whiskerboard
+# Tag: rickpeters/whiskerboard
 #
 # https://bitbucket.org/taccaci/agave-environment
 #
