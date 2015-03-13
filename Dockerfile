@@ -1,7 +1,7 @@
 ######################################################
 #
 # Agave DevOps Whiskerboard
-# Tag: agaveapi/whiskerboard
+# Tag: rickpeters/whiskerboard
 #
 # https://bitbucket.org/taccaci/agave-environment
 #
@@ -31,7 +31,7 @@
 
 FROM python:2.7
 
-MAINTAINER Rion Dooley <dooley@tacc.utexas.edu>
+MAINTAINER Rick Peters <rick.peters@me.com>
 
 RUN apt-get autoremove -y
 RUN apt-get update -y
