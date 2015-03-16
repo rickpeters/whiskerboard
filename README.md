@@ -42,3 +42,8 @@ At this point you can visit the app. Now head over to http://docker.example.com:
 
 Back on the admin home page, click on "services" and add the things you want to report the status of (website, API etc). To change the status of a service add an event for it.
 
+## Adding a REST API
+The original version of whiskerboard didn't include a REST api. I found a different fork which adds the api (https://github.com/sijis/whiskerboard). I manually added the new code from this fork into my own forked version and now have a dockerized whiskerboard with REST api. I'm still thinking on how I can give this back to the original author(s) by way of a pull request, but don't know which original I should choose (probably the docker version fork)
+
+The api seems to follow the stashboard implementation (see [documentation](https://stashboard.readthedocs.org)) and is also documented on the orginal repo [wiki](https://github.com/sijis/whiskerboard/wiki)
+
