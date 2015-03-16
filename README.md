@@ -47,3 +47,5 @@ The original version of whiskerboard didn't include a REST api. I found a differ
 
 The api seems to follow the stashboard implementation (see [documentation](https://stashboard.readthedocs.org)) and is also documented on the orginal repo [wiki](https://github.com/sijis/whiskerboard/wiki)
 
+## whiskerboard-tools
+sijis also added a nice python library with [whiskerboard-tools](https://github.com/sijis/whiskerboard-tools) which might come in handy
